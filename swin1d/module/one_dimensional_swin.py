@@ -108,7 +108,6 @@ class CirculateSwinBlock(nn.Module):
                             dw_conv=dw_conv,
                             **kwargs,
                         ),
-                        PrintShape(f"CirculateSwinAttention {i}"),
                     )
                 )
                 dim = dim * 2 if i == 0 and squeeze is False else dim
